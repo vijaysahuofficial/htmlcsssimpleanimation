@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: radial-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1)),url(../images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+
+   
+}
+header{
+    text-align: center;
+   
+}
+
+header h1{
+    margin: 70px 0 70px 0px;
+    text-align: center;
+    font-size: 300%;
+    color: #66fcf1;
+    border-bottom: 3px solid rgba(211, 64, 179, .8);
+    font-family: 'Eczar', serif;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+
+}
+
+header nav ul li{
+   
+    display: inline-block;
+    padding-left: 40px;
+    
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid;
+    padding: 10px;
+    border-left: 3px solid;
+    border-bottom-left-radius: 23px;
+    font-weight: bold;
+    
+}
+header nav ul li a:hover{
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-top-right-radius: 23px;
+    animation: cchange 2s ;
+    border-color: rgb(211, 64, 179);
+}
+.main_content{
+   margin-top: 200px;
+    margin-left: 120px;
+    width: 50%;
+}
+.main_content h2{
+    font-size: 300%;
+    margin: 0px 0px 40px 0px;
+    color:#fff;
+    
+    font-weight: lighter;
+
+}
+
+.website-name{
+    color:#66fcf1;
+    font-size: 60%;
+    
+    animation: web 1s infinite;
+}
+
+.website-name::before{
+    content: "";
+    animation: web1 3s infinite;
+    
+}
+p{
+    color: #fff;
+}
+footer{
+    clear: both;
+    color: #fff;
+    margin: 10%;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes 
+cchange{
+    0%{border-color: rgba(230, 15, 15,.5);
+        background-color:  rgba(230, 15, 15,.5);
+    }
+}
+
+@keyframes
+    web1{
+        0%{
+            content: "M|";
+        }
+        5%{
+            content: "My|";
+        }
+        10%{
+            content: "My |";
+        }
+        15%{
+            content: "My W|";
+        }
+        20%{
+            content: "My We|";
+        }
+        25%{
+            content: "My Web|";
+        }
+        30%{
+            content: "My Webs|";
+        }
+        35%{
+            content: "My Websi|";
+        }
+        40%{
+            content: "My Websit|";
+        }
+        100%{
+            content: "My Website|";
+        }        
+    }
+
